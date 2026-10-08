@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hairologist Salon | Transforming Hair Into Confidence</title>
+  <meta name="description" content="Hairologist Salon - Premium luxury hair salon offering expert hair styling, coloring, scalp treatments, keratin, bridal makeover, and academy." />
+  
+  <!-- Google Fonts: Cormorant Garamond for luxury serif headlines, Montserrat for clean sans-serif -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- TOP HEADER / NAVBAR -->
+  <header class="navbar-header" id="navbar">
+    <div class="navbar-container">
+      
+      <!-- Logo Section -->
+      <a href="#home" class="brand-logo" aria-label="Hairologist Salon Home">
+        <img src="assets/logo.jpg" alt="Hairologist Salon Logo" id="logo-img" class="logo-image" onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='flex';" />
+        <div id="logo-fallback" class="logo-fallback" style="display: none;">
+          <span class="logo-symbol">HS</span>
+          <div class="logo-text-group">
+            <span class="logo-main">HAIROLOGIST</span>
+            <span class="logo-sub">SALON</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link active">HOME</a>
+        <a href="#about" class="nav-link">ABOUT US</a>
+        <a href="#experts" class="nav-link">EXPERTS</a>
+        
+        <!-- Services Dropdown -->
+        <div class="nav-dropdown">
+          <a href="#services" class="nav-link dropdown-toggle">
+            SERVICES <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#services" class="dropdown-item" data-filter="all"><i class="fa-solid fa-scissors"></i> All Services</a>
+            <a href="#services" class="dropdown-item" data-filter="cut-style"><i class="fa-solid fa-wand-magic-sparkles"></i> Hair Cut & Styling</a>
+            <a href="#services" class="dropdown-item" data-filter="color"><i class="fa-solid fa-palette"></i> Coloring & Balayage</a>
+            <a href="#services" class="dropdown-item" data-filter="treatments"><i class="fa-solid fa-spa"></i> Keratin & Botoplex</a>
+            <a href="#services" class="dropdown-item" data-filter="scalp"><i class="fa-solid fa-droplet"></i> Scalp Therapy</a>
+            <a href="#services" class="dropdown-item" data-filter="bridal"><i class="fa-solid fa-crown"></i> Bridal & Grooming</a>
+          </div>
+        </div>
+
+        <a href="#salon" class="nav-link">OUR SALON</a>
+        <a href="#franchise" class="nav-link">FRANCHISE</a>
+        <a href="#academy" class="nav-link">ACADEMY</a>
+        <a href="#contact" class="nav-link">CONTACT</a>
+      </nav>
+
+      <!-- Action Items: OFFERS Button & Mobile Toggle -->
+      <div class="header-actions">
+        <button class="offers-btn" id="offers-trigger" aria-label="View Special Offers">
+          <span class="offers-text">OFFERS</span>
+          <span class="offers-badge"><i class="fa-solid fa-sparkles"></i></span>
+        </button>
+
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- HERO SECTION WITH VIDEO BACKGROUND -->
+  <section class="hero-section" id="home">
+    <!-- Video Element -->
+    <div class="video-container">
+      <video autoplay loop muted playsinline class="hero-video" id="hero-video-player">
+        <source src="assets/hero-video.mp4" type="video/mp4" />
+        <source src="assets/hero-video.MOV" type="video/quicktime" />
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+
+    <!-- Hero Content Overlay -->
+    <div class="hero-content">
+      <h1 class="hero-title">HAIROLOGIST SALON</h1>
+      <p class="hero-subtitle">TRANSFORMING HAIR, INTO CONFIDENCE</p>
+      
+      <!-- Glowing dot indicator line (matching screenshot design) -->
+      <div class="hero-indicator">
+        <div class="indicator-line"></div>
+        <div class="indicator-dot"></div>
+        <div class="indicator-line"></div>
+      </div>
+
+      <!-- Quick Action Buttons -->
+      <div class="hero-cta-group">
+        <button class="btn btn-gold" id="hero-book-btn">
+          <i class="fa-regular fa-calendar-check"></i> BOOK APPOINTMENT
+        </button>
+        <a href="#services" class="btn btn-outline">
+          EXPLORE SERVICES <i class="fa-solid fa-arrow-right-long"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll Down Indicator -->
+    <a href="#about" class="scroll-down-cue" aria-label="Scroll Down">
+      <span class="mouse-icon"><span class="wheel"></span></span>
+    </a>
+  </section>
+
+  <!-- MARQUEE PROMO BAR -->
+  <div class="promo-marquee">
+    <div class="marquee-track">
+      <span><i class="fa-solid fa-gem"></i> LUXURY SALON EXPERIENCE</span>
+      <span><i class="fa-solid fa-star"></i> MASTER STYLISTS & TRICHOLOGISTS</span>
+      <span><i class="fa-solid fa-crown"></i> VIP PRIVATE BRIDAL SUITES</span>
+      <span><i class="fa-solid fa-leaf"></i> 100% ORGANIC & PREMIUM HAIR FORMULAS</span>
+      <span><i class="fa-solid fa-gem"></i> LUXURY SALON EXPERIENCE</span>
+      <span><i class="fa-solid fa-star"></i> MASTER STYLISTS & TRICHOLOGISTS</span>
+    </div>
+  </div>
+
+  <!-- ABOUT US SECTION -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text-content">
+          <span class="section-tag font-accent">THE ART OF HAIR CARE</span>
+          <h2 class="section-title">Where Hair Care Meets High Couture & Science</h2>
+          <p class="lead-text">
+            At Hairologist Salon, we believe hair isn't just about appearance—it's a signature of your individuality, grace, and inner confidence.
+          </p>
+          <p class="body-text">
+            Founded with a passion for trichological precision and international styling standards, our master stylists create bespoke cuts, vibrant colors, and restorative treatments tailored to your unique hair profile.
+          </p>
+
+          <!-- Highlights List -->
+          <div class="about-features">
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fa-solid fa-award"></i></div>
+              <div>
+                <h4>Award Winning Stylists</h4>
+                <p>Trained at global academies in London, Paris, and Milan.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fa-solid fa-flask-vial"></i></div>
+              <div>
+                <h4>Advanced Scalp & Hair Diagnostics</h4>
+                <p>Microscopic hair follicle analysis before every major treatment.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stats Counter -->
+          <div class="stats-row">
+            <div class="stat-card">
+              <span class="stat-number" data-target="15">15+</span>
+              <span class="stat-label">Years Excellence</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="25000">25K+</span>
+              <span class="stat-label">Happy Clients</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="50">50+</span>
+              <span class="stat-label">Master Stylists</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-visual">
+          <div class="image-frame">
+            <video autoplay loop muted playsinline class="about-video">
+              <source src="assets/video_3216.mp4" type="video/mp4" />
+              <source src="assets/IMG_3216.MOV" type="video/quicktime" />
+            </video>
+            <div class="badge-overlay">
+              <i class="fa-solid fa-certificate"></i>
+              <span>PREMIUM<br>SALON 2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEET OUR EXPERTS SECTION -->
+  <section class="section experts-section" id="experts">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">MASTER ARTISTS & CREATORS</span>
+        <h2 class="section-title">Meet Our Experts</h2>
+        <p class="section-subtitle">Dedicated professionals committed to transforming your hair, beauty, and confidence.</p>
+      </div>
+
+      <div class="experts-grid">
+        
+        <!-- Expert 1: Sameer -->
+        <div class="expert-card">
+          <div class="expert-image-box">
+            <img src="assets/expert-sameer.jpg" alt="Sameer - Founder And Creative Director" class="expert-photo" />
+            <div class="expert-badge"><i class="fa-solid fa-crown"></i> Founder</div>
+          </div>
+          <div class="expert-info">
+            <h3 class="expert-name">Sameer</h3>
+            <span class="expert-role font-accent">Founder & Creative Director</span>
+            <p class="expert-bio">
+              With a passion for creativity and excellence, Sameer leads the vision, artistry, and innovation behind the brand, combining years of expertise with a commitment to delivering exceptional styles and unforgettable experiences.
+            </p>
+            <div class="expert-socials">
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Expert 2: Indu Chaudhary -->
+        <div class="expert-card">
+          <div class="expert-image-box">
+            <img src="assets/expert-indu.jpg" alt="Indu Chaudhary - Beauty And Hair Expert" class="expert-photo" />
+            <div class="expert-badge"><i class="fa-solid fa-scissors"></i> Hair Expert</div>
+          </div>
+          <div class="expert-info">
+            <h3 class="expert-name">Indu Chaudhary</h3>
+            <span class="expert-role font-accent">Beauty & Hair Expert</span>
+            <p class="expert-bio">
+              Led by your trusted hair and beauty specialist, get flawless transformations through custom hair patches, seamless extensions, and complete aesthetic care tailored precisely to restore your volume and signature confidence.
+            </p>
+            <div class="expert-socials">
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Expert 3: Pragati Chanshouliya -->
+        <div class="expert-card">
+          <div class="expert-image-box">
+            <img src="assets/expert-pragati.jpg" alt="Pragati Chanshouliya - Beauty And Makeup Expert" class="expert-photo" />
+            <div class="expert-badge"><i class="fa-solid fa-wand-magic-sparkles"></i> Makeup Expert</div>
+          </div>
+          <div class="expert-info">
+            <h3 class="expert-name">Pragati Chanshouliya</h3>
+            <span class="expert-role font-accent">Beauty & Makeup Expert</span>
+            <p class="expert-bio">
+              Crafted under dedicated professional expertise, enjoy personalized beauty care and signature makeup artistry designed to highlight your authentic features, revitalize your skin, and inspire unforgettable elegance with every look.
+            </p>
+            <div class="expert-socials">
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">CURATED MENU</span>
+        <h2 class="section-title">Exclusive Salon Services</h2>
+        <p class="section-subtitle">Indulge in personalized transformations crafted by industry leading hair artists.</p>
+      </div>
+
+      <!-- Service Category Filters -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">ALL SERVICES</button>
+        <button class="filter-btn" data-filter="cut-style">CUT & STYLING</button>
+        <button class="filter-btn" data-filter="color">COLOR & BALAYAGE</button>
+        <button class="filter-btn" data-filter="treatments">KERATIN & SPA</button>
+        <button class="filter-btn" data-filter="scalp">SCALP THERAPY</button>
+        <button class="filter-btn" data-filter="bridal">BRIDAL MAKEUP</button>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="services-grid" id="services-container">
+        
+        <!-- Service Card 1 -->
+        <div class="service-card" data-category="cut-style">
+          <div class="card-image">
+            <video autoplay loop muted playsinline class="card-video">
+              <source src="assets/video_3216.mp4" type="video/mp4" />
+              <source src="assets/IMG_3216.MOV" type="video/quicktime" />
+            </video>
+            <span class="price-tag">$85+</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><i class="fa-regular fa-clock"></i> 60 mins</div>
+            <h3 class="card-title">Signature Director's Haircut</h3>
+            <p class="card-desc">Personalized consultation, deep cleanse, scalp massage, precise cutting technique, and luxury blowout styling.</p>
+            <button class="book-service-btn" data-service="Signature Director's Haircut">BOOK SERVICE</button>
+          </div>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="service-card" data-category="color">
+          <div class="card-image">
+            <video autoplay loop muted playsinline class="card-video">
+              <source src="assets/video_3217.mp4" type="video/mp4" />
+              <source src="assets/IMG_3217.MOV" type="video/quicktime" />
+            </video>
+            <span class="price-tag">$220+</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><i class="fa-regular fa-clock"></i> 180 mins</div>
+            <h3 class="card-title">French Balayage & Silk Gloss</h3>
+            <p class="card-desc">Hand-painted dimension highlights tailored to your skin tone, enriched with Smartbond protection and silk toner.</p>
+            <button class="book-service-btn" data-service="French Balayage & Silk Gloss">BOOK SERVICE</button>
+          </div>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="service-card" data-category="treatments">
+          <div class="card-image">
+            <video autoplay loop muted playsinline class="card-video">
+              <source src="assets/video_3218.mp4" type="video/mp4" />
+              <source src="assets/IMG_3218.MOV" type="video/quicktime" />
+            </video>
+            <span class="price-tag">$280+</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><i class="fa-regular fa-clock"></i> 150 mins</div>
+            <h3 class="card-title">Royal Botoplex & Keratin Smoothening</h3>
+            <p class="card-desc">Formaldehyde-free intensive protein therapy that eliminates frizz, restores elasticity, and delivers glass mirror shine.</p>
+            <button class="book-service-btn" data-service="Royal Botoplex & Keratin Smoothening">BOOK SERVICE</button>
+          </div>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="service-card" data-category="scalp">
+          <div class="card-image">
+            <video autoplay loop muted playsinline class="card-video">
+              <source src="assets/video_3219.mp4" type="video/mp4" />
+              <source src="assets/IMG_3219.MOV" type="video/quicktime" />
+            </video>
+            <span class="price-tag">$140+</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><i class="fa-regular fa-clock"></i> 90 mins</div>
+            <h3 class="card-title">Micro-Oxygen Scalp Detox Therapy</h3>
+            <p class="card-desc">Deep exfoliation, steam infusion with organic essential oils, and high-frequency light therapy for hair growth.</p>
+            <button class="book-service-btn" data-service="Micro-Oxygen Scalp Detox Therapy">BOOK SERVICE</button>
+          </div>
+        </div>
+
+        <!-- Service Card 5 -->
+        <div class="service-card" data-category="bridal">
+          <div class="card-image">
+            <video autoplay loop muted playsinline class="card-video">
+              <source src="assets/video_3216.mp4" type="video/mp4" />
+              <source src="assets/IMG_3216.MOV" type="video/quicktime" />
+            </video>
+            <span class="price-tag">$450+</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><i class="fa-regular fa-clock"></i> 240 mins</div>
+            <h3 class="card-title">Royal Couture Bridal Hair & Makeover</h3>
+            <p class="card-desc">Includes trial consultation, HD airbrush makeup, intricate updos, veil setting, and luxury jewelry styling support.</p>
+            <button class="book-service-btn" data-service="Royal Couture Bridal Makeover">BOOK SERVICE</button>
+          </div>
+        </div>
+
+        <!-- Service Card 6 -->
+        <div class="service-card" data-category="cut-style">
+          <div class="card-image">
+            <video autoplay loop muted playsinline class="card-video">
+              <source src="assets/video_3217.mp4" type="video/mp4" />
+              <source src="assets/IMG_3217.MOV" type="video/quicktime" />
+            </video>
+            <span class="price-tag">$65+</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><i class="fa-regular fa-clock"></i> 45 mins</div>
+            <h3 class="card-title">Executive Men's Hair & Beard Styling</h3>
+            <p class="card-desc">Precision taper cut, hot towel beard trim, scalp massage, and matte clay finish for the modern gentleman.</p>
+            <button class="book-service-btn" data-service="Executive Men's Styling">BOOK SERVICE</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR SALON AMBIANCE / GALLERY SECTION -->
+  <section class="section salon-section" id="salon">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">OUR SANCTUARY</span>
+        <h2 class="section-title">The Hairologist Experience</h2>
+        <p class="section-subtitle">Designed to offer tranquil privacy, opulent comfort, and uncompromised hygiene.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item large">
+          <video autoplay loop muted playsinline class="gallery-video">
+            <source src="assets/video_3217.mp4" type="video/mp4" />
+            <source src="assets/IMG_3217.MOV" type="video/quicktime" />
+          </video>
+          <div class="gallery-caption">
+            <h3>VIP Styling Suite</h3>
+            <p>Private room for personalized consultations</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <video autoplay loop muted playsinline class="gallery-video">
+            <source src="assets/video_3218.mp4" type="video/mp4" />
+            <source src="assets/IMG_3218.MOV" type="video/quicktime" />
+          </video>
+          <div class="gallery-caption">
+            <h3>Shiatsu Wash Lounges</h3>
+            <p>Massaging reclining shampoo basins</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <video autoplay loop muted playsinline class="gallery-video">
+            <source src="assets/video_3219.mp4" type="video/mp4" />
+            <source src="assets/IMG_3219.MOV" type="video/quicktime" />
+          </video>
+          <div class="gallery-caption">
+            <h3>Custom Color Bar</h3>
+            <p>Formulated precisely for your hair chemistry</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FRANCHISE & ACADEMY SECTION -->
+  <section class="section dual-banner-section" id="franchise">
+    <div class="container">
+      <div class="dual-grid">
+        
+        <!-- Franchise Box -->
+        <div class="banner-card franchise-card">
+          <div class="card-content">
+            <span class="badge-gold"><i class="fa-solid fa-briefcase"></i> BUSINESS OPPORTUNITY</span>
+            <h2>Own a Hairologist Franchise</h2>
+            <p>Join a proven luxury salon model with high returns, complete operational training, global brand backing, and marketing support.</p>
+            <ul class="check-list">
+              <li><i class="fa-solid fa-check"></i> High Return on Investment (ROI)</li>
+              <li><i class="fa-solid fa-check"></i> Complete Staffing & Training Setup</li>
+              <li><i class="fa-solid fa-check"></i> Turnkey Interior Design & Branding</li>
+            </ul>
+            <button class="btn btn-gold modal-open-btn" data-modal="franchise-modal">APPLY FOR FRANCHISE</button>
+          </div>
+        </div>
+
+        <!-- Academy Box -->
+        <div class="banner-card academy-card" id="academy">
+          <div class="card-content">
+            <span class="badge-gold"><i class="fa-solid fa-graduation-cap"></i> HAIROLOGIST ACADEMY</span>
+            <h2>Master the Art of Hair Styling</h2>
+            <p>Elevate your career with international certified courses in Master Colorimetry, Advanced Hair Architecture, and Salon Management.</p>
+            <ul class="check-list">
+              <li><i class="fa-solid fa-check"></i> 100% Practical Live Models Training</li>
+              <li><i class="fa-solid fa-check"></i> Globally Recognized Certification</li>
+              <li><i class="fa-solid fa-check"></i> Job Placement Assistance</li>
+            </ul>
+            <button class="btn btn-outline modal-open-btn" data-modal="academy-modal">ENROLL IN ACADEMY</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT & APPOINTMENT SECTION -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-info-col">
+          <span class="section-tag">GET IN TOUCH</span>
+          <h2>Visit Our Flagship Salon</h2>
+          <p>Book your appointment today or drop by for a comprehensive scalp and hair diagnostic session with our master stylists.</p>
+
+          <div class="info-list">
+            <div class="info-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h5>LOCATION</h5>
+                <p>108 Luxury Boulevard, Suite 400, Fashion District</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <h5>PHONE / WHATSAPP</h5>
+                <p>+1 (800) 555-HAIR / +1 (800) 555-4247</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h5>EMAIL</h5>
+                <p>concierge@hairologistsalon.com</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <h5>OPENING HOURS</h5>
+                <p>Mon - Sat: 9:00 AM – 9:00 PM | Sun: 10:00 AM – 7:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-col">
+          <form class="appointment-form" id="quick-contact-form">
+            <h3>Send an Inquiry</h3>
+            <div class="form-group">
+              <label for="contact-name">Full Name</label>
+              <input type="text" id="contact-name" placeholder="John Doe" required />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-email">Email Address</label>
+                <input type="email" id="contact-email" placeholder="john@example.com" required />
+              </div>
+              <div class="form-group">
+                <label for="contact-phone">Phone Number</label>
+                <input type="tel" id="contact-phone" placeholder="+1 (555) 000-0000" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">Inquiry Type</label>
+              <select id="contact-subject">
+                <option value="appointment">Appointment Booking</option>
+                <option value="franchise">Franchise Opportunity</option>
+                <option value="academy">Academy Admission</option>
+                <option value="feedback">General Inquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" rows="4" placeholder="Tell us how we can help you..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold btn-block">SUBMIT INQUIRY</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo">
+            <img src="assets/logo.jpg" alt="Hairologist Salon Logo" class="logo-image-footer" onerror="this.style.display='none';" />
+            <span class="footer-logo-title">HAIROLOGIST SALON</span>
+          </a>
+          <p>Transforming Hair Into Confidence. Premier hair salon, trichology care, and hair academy.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>QUICK LINKS</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#salon">Our Salon</a></li>
+            <li><a href="#franchise">Franchise</a></li>
+            <li><a href="#academy">Academy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>OUR SERVICES</h4>
+          <ul>
+            <li><a href="#services">Director Haircuts</a></li>
+            <li><a href="#services">Balayage & Ombre</a></li>
+            <li><a href="#services">Botoplex & Keratin</a></li>
+            <li><a href="#services">Scalp Micro-Detox</a></li>
+            <li><a href="#services">Royal Bridal Package</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4>NEWSLETTER</h4>
+          <p>Subscribe for exclusive VIP offers, trend updates, and hair care tips.</p>
+          <form class="newsletter-form" id="newsletter-form">
+            <input type="email" placeholder="Your Email Address" required />
+            <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Hairologist Salon. All Rights Reserved. Designed for Luxury & Elegance.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON (Matching Screenshot) -->
+  <a href="https://wa.me/18005554247?text=Hello%20Hairologist%20Salon,%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="whatsapp-pulse"></span>
+  </a>
+
+  <!-- OFFERS MODAL DRAWER (Triggered by OFFERS button) -->
+  <div class="modal-overlay" id="offers-modal">
+    <div class="modal-card drawer-card">
+      <button class="modal-close" aria-label="Close Modal">&times;</button>
+      <div class="modal-header">
+        <span class="badge-gold"><i class="fa-solid fa-fire"></i> LIMITED TIME SPECIALS</span>
+        <h2>Exclusive Offers & Packages</h2>
+      </div>
+      <div class="offers-list">
+        <div class="offer-item">
+          <div class="offer-tag">30% OFF</div>
+          <div class="offer-info">
+            <h4>Monsoon Keratin & Botoplex Combo</h4>
+            <p>Revitalize frizzy hair with our master protein infusion therapy. Includes complimentary home care serum.</p>
+            <span class="offer-code">CODE: <strong>MONSOON30</strong></span>
+          </div>
+          <button class="btn btn-sm btn-gold book-offer-btn" data-offer="Monsoon Keratin Combo">CLAIM</button>
+        </div>
+        
+        <div class="offer-item">
+          <div class="offer-tag">20% OFF</div>
+          <div class="offer-info">
+            <h4>French Balayage & Gloss Package</h4>
+            <p>Full dimensional highlights + Smartbond bond multiplier + luxury styling blowout.</p>
+            <span class="offer-code">CODE: <strong>BALAYAGE20</strong></span>
+          </div>
+          <button class="btn btn-sm btn-gold book-offer-btn" data-offer="French Balayage Package">CLAIM</button>
+        </div>
+
+        <div class="offer-item">
+          <div class="offer-tag">FREE GIFT</div>
+          <div class="offer-info">
+            <h4>First Time Visitor Scalp Analysis</h4>
+            <p>Free trichological microscopic scalp report with any haircut or color service.</p>
+            <span class="offer-code">CODE: <strong>WELCOMEGIFT</strong></span>
+          </div>
+          <button class="btn btn-sm btn-gold book-offer-btn" data-offer="First Visitor Scalp Analysis">CLAIM</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- APPOINTMENT BOOKING MODAL -->
+  <div class="modal-overlay" id="booking-modal">
+    <div class="modal-card">
+      <button class="modal-close" aria-label="Close Modal">&times;</button>
+      <div class="modal-header text-center">
+        <h2>Book Your Salon Experience</h2>
+        <p>Select your preferred service, date, and stylist.</p>
+      </div>
+      <form id="appointment-modal-form" class="modal-form">
+        <div class="form-group">
+          <label for="book-service-select">Select Service</label>
+          <select id="book-service-select" required>
+            <option value="">-- Choose a Service --</option>
+            <option value="Signature Director's Haircut">Signature Director's Haircut ($85+)</option>
+            <option value="French Balayage & Silk Gloss">French Balayage & Silk Gloss ($220+)</option>
+            <option value="Royal Botoplex & Keratin Smoothening">Royal Botoplex & Keratin Smoothening ($280+)</option>
+            <option value="Micro-Oxygen Scalp Detox Therapy">Micro-Oxygen Scalp Detox Therapy ($140+)</option>
+            <option value="Royal Couture Bridal Makeover">Royal Couture Bridal Makeover ($450+)</option>
+            <option value="Executive Men's Styling">Executive Men's Styling ($65+)</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="book-date">Preferred Date</label>
+            <input type="date" id="book-date" required />
+          </div>
+          <div class="form-group">
+            <label for="book-time">Preferred Time</label>
+            <select id="book-time" required>
+              <option value="10:00 AM">10:00 AM</option>
+              <option value="12:00 PM">12:00 PM</option>
+              <option value="02:00 PM">02:00 PM</option>
+              <option value="04:00 PM">04:00 PM</option>
+              <option value="06:00 PM">06:00 PM</option>
+              <option value="07:30 PM">07:30 PM</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="book-stylist">Preferred Stylist (Optional)</label>
+          <select id="book-stylist">
+            <option value="Any Available Master Stylist">Any Available Master Stylist</option>
+            <option value="Alexander Vance (Creative Director)">Alexander Vance (Creative Director)</option>
+            <option value="Sophia Rose (Senior Colorist)">Sophia Rose (Senior Colorist)</option>
+            <option value="Marcus Chen (Keratin Specialist)">Marcus Chen (Keratin Specialist)</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="book-name">Your Full Name</label>
+            <input type="text" id="book-name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="book-phone">Phone Number</label>
+            <input type="tel" id="book-phone" placeholder="+1 (555) 000-0000" required />
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-gold btn-block">CONFIRM RESERVATION</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast-notification" id="toast">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toast-message">Action completed successfully!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
