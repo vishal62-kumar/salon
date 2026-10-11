@@ -173,11 +173,11 @@ button {
 }
 
 .logo-image {
-  height: 56px;
+  height: 54px;
   width: auto;
   object-fit: contain;
   mix-blend-mode: screen;
-  filter: brightness(1.1);
+  filter: brightness(1.05) contrast(1.1);
   transition: transform var(--transition-fast);
 }
 
@@ -190,6 +190,7 @@ button {
   width: auto;
   object-fit: contain;
   mix-blend-mode: screen;
+  filter: brightness(1.05) contrast(1.1);
   margin-bottom: 12px;
 }
 
@@ -1394,8 +1395,35 @@ button {
   font-weight: 700;
 }
 
-.newsletter-form button:hover {
-  background: var(--accent-gold-hover);
+.footer-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.footer-contact-item i {
+  color: var(--accent-gold);
+  margin-top: 4px;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.footer-contact-item a {
+  color: var(--text-muted);
+  transition: var(--transition-fast);
+}
+
+.footer-contact-item a:hover {
+  color: var(--accent-gold);
 }
 
 .footer-bottom {

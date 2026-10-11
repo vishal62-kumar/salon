@@ -24,7 +24,7 @@
       
       <!-- Logo Section -->
       <a href="#home" class="brand-logo" aria-label="Hairologist Salon Home">
-        <img src="assets/logo.jpg" alt="Hairologist Salon Logo" id="logo-img" class="logo-image" onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='flex';" />
+        <img src="assets/logo-transparent.png" alt="Hairologist Salon Logo" id="logo-img" class="logo-image" onerror="this.src='assets/logo.jpg';" />
         <div id="logo-fallback" class="logo-fallback" style="display: none;">
           <span class="logo-symbol">HS</span>
           <div class="logo-text-group">
@@ -47,6 +47,10 @@
           </a>
           <div class="dropdown-menu">
             <a href="#services" class="dropdown-item" data-filter="all"><i class="fa-solid fa-scissors"></i> All Services</a>
+            <a href="#services" class="dropdown-item" data-filter="hair-patch"><i class="fa-solid fa-feather"></i> Hair Patch & Extension</a>
+            <a href="#services" class="dropdown-item" data-filter="cancer-wigs"><i class="fa-solid fa-ribbon"></i> Cancer Patients Wigs</a>
+            <a href="#services" class="dropdown-item" data-filter="beauty"><i class="fa-solid fa-sparkles"></i> Beauty Services (Facial & Waxing)</a>
+            <a href="#services" class="dropdown-item" data-filter="nails"><i class="fa-solid fa-hand-sparkles"></i> Manicure & Pedicure (Hand & Feet)</a>
             <a href="#services" class="dropdown-item" data-filter="cut-style"><i class="fa-solid fa-wand-magic-sparkles"></i> Hair Cut & Styling</a>
             <a href="#services" class="dropdown-item" data-filter="color"><i class="fa-solid fa-palette"></i> Coloring & Balayage</a>
             <a href="#services" class="dropdown-item" data-filter="treatments"><i class="fa-solid fa-spa"></i> Keratin & Botoplex</a>
@@ -205,17 +209,17 @@
 
       <div class="experts-grid">
         
-        <!-- Expert 1: Sameer -->
+        <!-- Expert 1: Indu Chaudhary (H.O.D) -->
         <div class="expert-card">
           <div class="expert-image-box">
-            <img src="assets/expert-sameer.jpg" alt="Sameer - Founder And Creative Director" class="expert-photo" />
-            <div class="expert-badge"><i class="fa-solid fa-crown"></i> Founder</div>
+            <img src="assets/expert-indu.jpg" alt="Indu Chaudhary - H.O.D and hair patch and extension expert" class="expert-photo" />
+            <div class="expert-badge"><i class="fa-solid fa-crown"></i> H.O.D Expert</div>
           </div>
           <div class="expert-info">
-            <h3 class="expert-name">Sameer</h3>
-            <span class="expert-role font-accent">Founder & Creative Director</span>
+            <h3 class="expert-name">Indu Chaudhary</h3>
+            <span class="expert-role font-accent">H.O.D and hair patch and extension expert</span>
             <p class="expert-bio">
-              With a passion for creativity and excellence, Sameer leads the vision, artistry, and innovation behind the brand, combining years of expertise with a commitment to delivering exceptional styles and unforgettable experiences.
+              An experienced H.O.D. specializing in hair patch solutions and extensions, delivering natural-looking results with precision, personalized consultations, and expert techniques to enhance confidence and appearance.
             </p>
             <div class="expert-socials">
               <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
@@ -224,17 +228,17 @@
           </div>
         </div>
 
-        <!-- Expert 2: Indu Chaudhary -->
+        <!-- Expert 2: Sameer -->
         <div class="expert-card">
           <div class="expert-image-box">
-            <img src="assets/expert-indu.jpg" alt="Indu Chaudhary - Beauty And Hair Expert" class="expert-photo" />
-            <div class="expert-badge"><i class="fa-solid fa-scissors"></i> Hair Expert</div>
+            <img src="assets/expert-sameer.jpg" alt="Sameer - Founder And Creative Director" class="expert-photo" />
+            <div class="expert-badge"><i class="fa-solid fa-star"></i> Founder</div>
           </div>
           <div class="expert-info">
-            <h3 class="expert-name">Indu Chaudhary</h3>
-            <span class="expert-role font-accent">Beauty & Hair Expert</span>
+            <h3 class="expert-name">Sameer</h3>
+            <span class="expert-role font-accent">Founder & Creative Director</span>
             <p class="expert-bio">
-              Led by your trusted hair and beauty specialist, get flawless transformations through custom hair patches, seamless extensions, and complete aesthetic care tailored precisely to restore your volume and signature confidence.
+              With a passion for creativity and excellence, Sameer leads the vision, artistry, and innovation behind the brand, combining years of expertise with a commitment to delivering exceptional styles and unforgettable experiences.
             </p>
             <div class="expert-socials">
               <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
@@ -278,6 +282,10 @@
       <!-- Service Category Filters -->
       <div class="filter-tabs">
         <button class="filter-btn active" data-filter="all">ALL SERVICES</button>
+        <button class="filter-btn" data-filter="hair-patch">HAIR PATCH & EXTENSION</button>
+        <button class="filter-btn" data-filter="cancer-wigs">CANCER PATIENTS WIGS</button>
+        <button class="filter-btn" data-filter="beauty">BEAUTY & FACIAL</button>
+        <button class="filter-btn" data-filter="nails">MANICURE & PEDICURE</button>
         <button class="filter-btn" data-filter="cut-style">CUT & STYLING</button>
         <button class="filter-btn" data-filter="color">COLOR & BALAYAGE</button>
         <button class="filter-btn" data-filter="treatments">KERATIN & SPA</button>
@@ -288,6 +296,74 @@
       <!-- Services Grid -->
       <div class="services-grid" id="services-container">
         
+        <!-- Service Card: Hair Patch & Extension -->
+        <div class="service-card" data-category="hair-patch">
+          <div class="card-image">
+            <video autoplay loop muted playsinline class="card-video">
+              <source src="assets/video_3216.mp4" type="video/mp4" />
+              <source src="assets/IMG_3216.MOV" type="video/quicktime" />
+            </video>
+            <span class="price-tag">Custom</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><i class="fa-solid fa-feather"></i> Specialist Consultation</div>
+            <h3 class="card-title">Hair Patch & Extension</h3>
+            <p class="card-desc">Bespoke natural human hair patches and seamless micro-ring or tape extensions crafted to blend invisibly with your texture and restore full volume.</p>
+            <button class="book-service-btn" data-service="Hair Patch & Extension">BOOK SERVICE</button>
+          </div>
+        </div>
+
+        <!-- Service Card: Cancer Patients Wigs -->
+        <div class="service-card" data-category="cancer-wigs">
+          <div class="card-image">
+            <video autoplay loop muted playsinline class="card-video">
+              <source src="assets/video_3219.mp4" type="video/mp4" />
+              <source src="assets/IMG_3219.MOV" type="video/quicktime" />
+            </video>
+            <span class="price-tag">Compassion Care</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><i class="fa-solid fa-ribbon"></i> Medical Grade Wigs</div>
+            <h3 class="card-title">Cancer Patients Wigs</h3>
+            <p class="card-desc">Ultra-gentle, lightweight, hypoallergenic natural hair cranial prostheses designed specifically for chemotherapy patients with sensitive scalps and private fitting.</p>
+            <button class="book-service-btn" data-service="Cancer Patients Wigs">BOOK SERVICE</button>
+          </div>
+        </div>
+
+        <!-- Service Card: Beauty Services (Facial & Waxing) -->
+        <div class="service-card" data-category="beauty">
+          <div class="card-image">
+            <video autoplay loop muted playsinline class="card-video">
+              <source src="assets/video_3218.mp4" type="video/mp4" />
+              <source src="assets/IMG_3218.MOV" type="video/quicktime" />
+            </video>
+            <span class="price-tag">Exclusive</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><i class="fa-solid fa-sparkles"></i> 60 - 90 mins</div>
+            <h3 class="card-title">Beauty Services (Facial & Waxing)</h3>
+            <p class="card-desc">Luminous organic facials, skin brightening, hydrating peel rituals, and painless luxury waxing services for velvety smooth, radiant skin.</p>
+            <button class="book-service-btn" data-service="Beauty Services (Facial & Waxing)">BOOK SERVICE</button>
+          </div>
+        </div>
+
+        <!-- Service Card: Manicure & Pedicure (Hand & Feet) -->
+        <div class="service-card" data-category="nails">
+          <div class="card-image">
+            <video autoplay loop muted playsinline class="card-video">
+              <source src="assets/video_3217.mp4" type="video/mp4" />
+              <source src="assets/IMG_3217.MOV" type="video/quicktime" />
+            </video>
+            <span class="price-tag">Relaxation</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><i class="fa-solid fa-hand-sparkles"></i> 75 mins</div>
+            <h3 class="card-title">Manicure & Pedicure (Hand & Feet)</h3>
+            <p class="card-desc">Relaxing spa scrub, reflexology massage, cuticle refinement, callus therapy, and flawless gel polish for hands and feet elegance.</p>
+            <button class="book-service-btn" data-service="Manicure & Pedicure (Hand & Feet)">BOOK SERVICE</button>
+          </div>
+        </div>
+
         <!-- Service Card 1 -->
         <div class="service-card" data-category="cut-style">
           <div class="card-image">
@@ -491,28 +567,28 @@
               <i class="fa-solid fa-location-dot"></i>
               <div>
                 <h5>LOCATION</h5>
-                <p>108 Luxury Boulevard, Suite 400, Fashion District</p>
+                <p>Shop Number 31, LGF Green Park Market, Block G, Green Park Extension, Green Park, New Delhi, Delhi 110016</p>
               </div>
             </div>
             <div class="info-item">
               <i class="fa-solid fa-phone"></i>
               <div>
                 <h5>PHONE / WHATSAPP</h5>
-                <p>+1 (800) 555-HAIR / +1 (800) 555-4247</p>
+                <p><a href="https://wa.me/919311694139" target="_blank">+91 93116 94139</a></p>
               </div>
             </div>
             <div class="info-item">
               <i class="fa-solid fa-envelope"></i>
               <div>
                 <h5>EMAIL</h5>
-                <p>concierge@hairologistsalon.com</p>
+                <p><a href="mailto:hairologistsalon@gmail.com">hairologistsalon@gmail.com</a></p>
               </div>
             </div>
             <div class="info-item">
               <i class="fa-solid fa-clock"></i>
               <div>
                 <h5>OPENING HOURS</h5>
-                <p>Mon - Sat: 9:00 AM – 9:00 PM | Sun: 10:00 AM – 7:00 PM</p>
+                <p>Monday – Sunday (7 Days): 9:30 AM – 9:00 PM</p>
               </div>
             </div>
           </div>
@@ -532,13 +608,17 @@
               </div>
               <div class="form-group">
                 <label for="contact-phone">Phone Number</label>
-                <input type="tel" id="contact-phone" placeholder="+1 (555) 000-0000" required />
+                <input type="tel" id="contact-phone" placeholder="+91 93116 94139" required />
               </div>
             </div>
             <div class="form-group">
               <label for="contact-subject">Inquiry Type</label>
               <select id="contact-subject">
                 <option value="appointment">Appointment Booking</option>
+                <option value="hair-patch">Hair Patch & Extension</option>
+                <option value="cancer-wigs">Cancer Patients Wigs</option>
+                <option value="beauty-services">Beauty Services (Facial & Waxing)</option>
+                <option value="mani-pedi">Manicure & Pedicure (Hand & Feet)</option>
                 <option value="franchise">Franchise Opportunity</option>
                 <option value="academy">Academy Admission</option>
                 <option value="feedback">General Inquiry</option>
@@ -561,10 +641,10 @@
       <div class="footer-top">
         <div class="footer-brand">
           <a href="#home" class="brand-logo">
-            <img src="assets/logo.jpg" alt="Hairologist Salon Logo" class="logo-image-footer" onerror="this.style.display='none';" />
+            <img src="assets/logo-transparent.png" alt="Hairologist Salon Logo" class="logo-image-footer" onerror="this.src='assets/logo.jpg';" />
             <span class="footer-logo-title">HAIROLOGIST SALON</span>
           </a>
-          <p>Transforming Hair Into Confidence. Premier hair salon, trichology care, and hair academy.</p>
+          <p>Transforming Hair Into Confidence. Premier hair salon, hair patch & extension experts, and trichology care.</p>
           <div class="social-links">
             <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
@@ -579,30 +659,45 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#experts">Our Experts</a></li>
             <li><a href="#salon">Our Salon</a></li>
-            <li><a href="#franchise">Franchise</a></li>
-            <li><a href="#academy">Academy</a></li>
+            <li><a href="#contact">Contact Us</a></li>
           </ul>
         </div>
 
         <div class="footer-links">
           <h4>OUR SERVICES</h4>
           <ul>
+            <li><a href="#services">Hair Patch & Extension</a></li>
+            <li><a href="#services">Cancer Patients Wigs</a></li>
+            <li><a href="#services">Beauty Services (Facial & Waxing)</a></li>
+            <li><a href="#services">Manicure & Pedicure</a></li>
             <li><a href="#services">Director Haircuts</a></li>
             <li><a href="#services">Balayage & Ombre</a></li>
             <li><a href="#services">Botoplex & Keratin</a></li>
-            <li><a href="#services">Scalp Micro-Detox</a></li>
-            <li><a href="#services">Royal Bridal Package</a></li>
           </ul>
         </div>
 
-        <div class="footer-newsletter">
-          <h4>NEWSLETTER</h4>
-          <p>Subscribe for exclusive VIP offers, trend updates, and hair care tips.</p>
-          <form class="newsletter-form" id="newsletter-form">
-            <input type="email" placeholder="Your Email Address" required />
-            <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
-          </form>
+        <div class="footer-links">
+          <h4>CONTACT & HOURS</h4>
+          <div class="footer-contact-info">
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Shop Number 31, LGF Green Park Market, Block G, Green Park Extension, Green Park, New Delhi, Delhi 110016</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+919311694139">+91 93116 94139</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:hairologistsalon@gmail.com">hairologistsalon@gmail.com</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-clock"></i>
+              <span>7 Days: 9:30 AM to 9:00 PM</span>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -612,8 +707,8 @@
     </div>
   </footer>
 
-  <!-- FLOATING WHATSAPP BUTTON (Matching Screenshot) -->
-  <a href="https://wa.me/18005554247?text=Hello%20Hairologist%20Salon,%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/919311694139?text=Hello%20Hairologist%20Salon,%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
     <i class="fa-brands fa-whatsapp"></i>
     <span class="whatsapp-pulse"></span>
   </a>
@@ -673,6 +768,10 @@
           <label for="book-service-select">Select Service</label>
           <select id="book-service-select" required>
             <option value="">-- Choose a Service --</option>
+            <option value="Hair Patch & Extension">Hair Patch & Extension (Specialist Consultation)</option>
+            <option value="Cancer Patients Wigs">Cancer Patients Wigs (Compassion Care)</option>
+            <option value="Beauty Services (Facial & Waxing)">Beauty Services (Facial & Waxing)</option>
+            <option value="Manicure & Pedicure (Hand & Feet)">Manicure & Pedicure (Hand & Feet)</option>
             <option value="Signature Director's Haircut">Signature Director's Haircut ($85+)</option>
             <option value="French Balayage & Silk Gloss">French Balayage & Silk Gloss ($220+)</option>
             <option value="Royal Botoplex & Keratin Smoothening">Royal Botoplex & Keratin Smoothening ($280+)</option>
