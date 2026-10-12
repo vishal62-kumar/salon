@@ -1290,6 +1290,150 @@ button {
   box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
 }
 
+/* Google Reviews & Map Integration Card */
+.google-reviews-map-wrapper {
+  margin-top: 50px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.google-reviews-header {
+  padding: 30px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--border-light);
+  background: linear-gradient(135deg, rgba(20, 23, 29, 0.95) 0%, rgba(11, 13, 16, 0.98) 100%);
+}
+
+.google-badge-info {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.google-icon-circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #4285F4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  flex-shrink: 0;
+}
+
+.review-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.review-title {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin: 0 0 6px 0;
+  line-height: 1.2;
+}
+
+.review-stars-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.review-stars-row .stars {
+  color: #fbbc04;
+  font-size: 0.95rem;
+  letter-spacing: 2px;
+}
+
+.review-score {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.review-dot {
+  color: var(--text-muted);
+}
+
+.review-verified {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.review-verified i {
+  color: #34a853;
+}
+
+.google-actions-group {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.btn-review-write {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  font-size: 0.82rem;
+}
+
+.btn-review-view {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  font-size: 0.82rem;
+}
+
+.google-map-container {
+  width: 100%;
+  height: 380px;
+  background: #000000;
+  overflow: hidden;
+}
+
+.google-map-container iframe {
+  display: block;
+  filter: contrast(1.05) saturate(1.1);
+}
+
+@media (max-width: 768px) {
+  .google-reviews-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+  }
+  .google-actions-group {
+    width: 100%;
+  }
+  .google-actions-group .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 /* --------------------------------------------------------------------------
    11. FOOTER
    -------------------------------------------------------------------------- */
